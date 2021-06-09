@@ -50,11 +50,13 @@
     width: 5rem;
   }
   .section1 {
-    width: 1200px;
+    max-width: 1200px;
     padding-bottom: 5em;
     margin: 0 auto;
     
-    @include flex(space-around);
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
     flex-wrap: wrap;
   }
 
@@ -66,6 +68,20 @@
     background: linear-gradient(-135deg,#05FBFF, #1D62F0 );
     // background: linear-gradient(-135deg, #E4A972, #9941D8);
   }
+
+  .card {
+    margin: 2rem;
+  }
 /*----------------------*/
 /* mainはココで終わり */
 /*----------------------*/
+
+/*　画面サイズが768pxまではここを読み込む*/
+@media screen and (max-width:768px) {
+ 
+  // ヘッダーはココで終わり⇑⇑
+  .section1 {
+    max-width: 100%;
+  }
+
+}

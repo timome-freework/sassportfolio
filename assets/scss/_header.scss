@@ -60,6 +60,9 @@
   border-top: 5px solid $mainColor;
   border-bottom: 5px solid $mainColor;
   // animation: slide 8s linear 1s infinite forwards;
+  .profil {
+    max-width: 11em;
+  }
 }
 
 // @keyframes slide {
