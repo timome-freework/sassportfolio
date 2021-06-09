@@ -1,0 +1,71 @@
+
+@import "_function.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+/*----------------------*/
+/*   mainはココから   */
+/*----------------------*/
+  .main {
+    // position: relative;
+    // z-index: 2;
+    // margin-bottom: 200px;
+    background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4)) , url("../img/body.png") center top / cover no-repeat fixed;
+    .main-h1 {
+      height: 3.5em;
+      line-height: 3.5em;
+      font-family: $fontfamily;
+      font-size: 3em;
+      color: pink;
+      letter-spacing: 2rem;
+      text-shadow: 2px 2px $white;
+      text-align: center;
+    }
+    .flex-top {
+      padding-top: 2rem;
+    }
+    .flex {
+      @include flex(space-around);
+      flex-wrap: wrap;
+      .h1-p1 {
+        @include h1-pv;
+      }
+      .h1-p2 {
+        @include h1-pv;
+      }
+    }
+    .flex-bottom {
+      padding-bottom: 2rem
+    }
+  }
+  .h1-p1:hover {
+    transform: rotate(360deg);
+  }
+  .h1-p2:hover {
+    transform: scale(1.5);
+  }
+
+ 
+  .country {
+    width: 5rem;
+  }
+  .section1 {
+    width: 1200px;
+    padding-bottom: 5em;
+    margin: 0 auto;
+    
+    @include flex(space-around);
+    flex-wrap: wrap;
+  }
+
+  .lightbox {
+    width: 760px;
+    height: 450px;
+  }
+  .btn-primary {
+    background: linear-gradient(-135deg,#05FBFF, #1D62F0 );
+    // background: linear-gradient(-135deg, #E4A972, #9941D8);
+  }
+/*----------------------*/
+/* mainはココで終わり */
+/*----------------------*/

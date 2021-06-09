@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* -----------------------全ページに必要⇑⇑------------------*/
+
+$fontfamily:  "Nico Moji";
+
+$mainColor: #55c500;
+$white: white;
+
+@mixin flex($justify:center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin backimg($backimgurl:("../img/main1.png")) {
+  background: $backimgurl center top / contain no-repeat fixed;
+  height: 100vh;
+}
+
+@mixin h1-pv{
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-out;
+  transition-delay: .3s;
+}

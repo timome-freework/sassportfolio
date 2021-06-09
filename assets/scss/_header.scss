@@ -1,0 +1,76 @@
+/*----------------------*/
+/*   headerはココから   */
+/*----------------------*/
+// .header {
+  
+// }
+.container-fluid {
+  background-color: $mainColor;
+  height: 56px;
+  .navbar-brand {
+    font-family: $fontfamily;
+    font-weight: bold;
+    color: $white;
+  }
+}
+.header-img1 {
+  @include backimg(url("../img/main1.png"));
+  // background: center top / contain no-repeat fixed;
+  // height: 100vh;
+}
+.header-img2 {
+  @include backimg(url("../img/main2.png"));
+  // background: url("../img/main2.png") center top / contain no-repeat fixed;
+  // height: 100vh;
+}
+.header-img3 {
+  @include backimg(url("../img/main3.png"));
+  // background: url("../img/main3.png") center top / contain no-repeat fixed;
+  // height: 100vh;
+}
+.header-img4 {
+  @include backimg(url("../img/main4.png"));
+  // background: url("../img/main4.png") center top / contain no-repeat fixed;
+  // height: 100vh;
+}
+.header-img5 {
+  @include backimg(url("../img/main5.png"));
+  // background: url("../img/main5.png") center top / contain no-repeat fixed;
+  // height: 100vh;
+}
+.header-p1 {
+  font-family: $fontfamily;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.p1 {
+  // background-color: $mainColor;
+  @include flex(center);
+  color: $mainColor;
+  border-top: 5px solid $mainColor;
+  border-bottom: 5px solid $mainColor;
+  // animation: slide 8s linear 1s infinite forwards;
+}
+
+.p2 {
+  @include flex(center);
+  background-color: $white;
+  color: $mainColor;
+  border-top: 5px solid $mainColor;
+  border-bottom: 5px solid $mainColor;
+  // animation: slide 8s linear 1s infinite forwards;
+}
+
+// @keyframes slide {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(300px);
+//   }
+// }
+
+/*----------------------*/
+/* headerはココで終わり */
+/*----------------------*/

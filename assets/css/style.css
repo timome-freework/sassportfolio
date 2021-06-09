@@ -1,0 +1,245 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -----------------------全ページに必要⇑⇑------------------*/
+/*----------------------*/
+/*   headerはココから   */
+/*----------------------*/
+.container-fluid {
+  background-color: #55c500;
+  height: 56px;
+}
+
+.container-fluid .navbar-brand {
+  font-family: "Nico Moji";
+  font-weight: bold;
+  color: white;
+}
+
+.header-img1 {
+  background: url("../img/main1.png") center top/contain no-repeat fixed;
+  height: 100vh;
+}
+
+.header-img2 {
+  background: url("../img/main2.png") center top/contain no-repeat fixed;
+  height: 100vh;
+}
+
+.header-img3 {
+  background: url("../img/main3.png") center top/contain no-repeat fixed;
+  height: 100vh;
+}
+
+.header-img4 {
+  background: url("../img/main4.png") center top/contain no-repeat fixed;
+  height: 100vh;
+}
+
+.header-img5 {
+  background: url("../img/main5.png") center top/contain no-repeat fixed;
+  height: 100vh;
+}
+
+.header-p1 {
+  font-family: "Nico Moji";
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.p1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #55c500;
+  border-top: 5px solid #55c500;
+  border-bottom: 5px solid #55c500;
+}
+
+.p2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: #55c500;
+  border-top: 5px solid #55c500;
+  border-bottom: 5px solid #55c500;
+}
+
+/*----------------------*/
+/* headerはココで終わり */
+/*----------------------*/
+/*----------------------*/
+/*   footerはココから   */
+/*----------------------*/
+.footer {
+  width: 100%;
+  height: 13rem;
+  padding-left: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 0, 0, 0.2)), to(rgba(0, 255, 0, 0.2)));
+  background: linear-gradient(360deg, rgba(255, 0, 0, 0.2), rgba(0, 255, 0, 0.2));
+  font-size: 100px;
+}
+
+.footer .footer-h1 {
+  line-height: 13rem;
+  font-family: "Nico Moji";
+  font-size: .9rem;
+  color: pink;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+.footer .footer-h1 .heart {
+  font-size: 10px;
+  color: #55c500;
+}
+
+.footer-h1::before {
+  content: "♥";
+  font-size: 10px;
+  color: #55c500;
+}
+
+.footer-h1::after {
+  content: "♥";
+  font-size: 10px;
+  color: #55c500;
+}
+
+/*----------------------*/
+/*   footerはココで終わり   */
+/*----------------------*/
+/*----------------------*/
+/*   mainはココから   */
+/*----------------------*/
+.main {
+  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4)), url("../img/body.png") center top/cover no-repeat fixed;
+}
+
+.main .main-h1 {
+  height: 3.5em;
+  line-height: 3.5em;
+  font-family: "Nico Moji";
+  font-size: 3em;
+  color: pink;
+  letter-spacing: 2rem;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+.main .flex-top {
+  padding-top: 2rem;
+}
+
+.main .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .flex .h1-p1 {
+  cursor: pointer;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.main .flex .h1-p2 {
+  cursor: pointer;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.main .flex-bottom {
+  padding-bottom: 2rem;
+}
+
+.h1-p1:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.h1-p2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.country {
+  width: 5rem;
+}
+
+.section1 {
+  width: 1200px;
+  padding-bottom: 5em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lightbox {
+  width: 760px;
+  height: 450px;
+}
+
+.btn-primary {
+  background: linear-gradient(-135deg, #05FBFF, #1D62F0);
+}
+
+/*----------------------*/
+/* mainはココで終わり */
+/*----------------------*/
+/*# sourceMappingURL=style.css.map */
